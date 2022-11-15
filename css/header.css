@@ -1,0 +1,332 @@
+.header_body {
+    height: 100vh;
+    width: 100%;
+}
+
+.header_main {
+    display: flex;
+    flex-direction: column;
+}
+
+.header_head_box {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header_inform {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
+.header_center_box {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+    font-family: "Noto Sans KR", Verdana, Dotum, AppleGothic, sans-serif;
+}
+
+.logo {
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.search_box {
+    display: flex;
+
+    align-items: center;
+}
+
+.search_box>input {
+    border: none;
+    border-bottom: 2px solid black;
+
+    width: 500px;
+    padding: 0 5px;
+    padding-bottom: 10px;
+
+    font-size: 15px;
+}
+
+.search_box>input:focus {
+    outline: none;
+}
+
+.search_box>i {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding-bottom: 10px;
+
+    border-bottom: 2px solid black;
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+.header_center_box>ul {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.header_center_box>ul>li {
+    padding: 0 5px;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+nav {
+    /* position: relative; */
+    display: flex;
+
+    justify-content: space-between;
+    background-color: rgb(255, 38, 38);
+    height: 80px;
+    width: 100vw;
+    color: white;
+
+    font-family: "Noto Sans KR", Verdana, Dotum, AppleGothic, sans-serif;
+}
+
+nav>.nav_clamp_box {
+    width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav>.nav_clamp_box>ul {
+    display: flex;
+    align-items: center;
+
+    width: 600px;
+}
+
+nav>.nav_clamp_box>ul a {
+    color: white;
+}
+
+nav ul li {
+    padding: 0 10px;
+
+    cursor: pointer;
+}
+
+.nav_clamp_box>ul>li {
+    height: 100%;
+}
+
+.nav_clamp_box>ul>li:hover .menu_title {
+    color: yellow;
+}
+
+nav>.nav_clamp_box>.main_nav li>.fa-solid {
+    position: relative;
+
+    font-size: 30px;
+    margin-right: 50px;
+}
+
+.circle {
+    position: absolute;
+
+    width: 50px;
+    height: 50px;
+    top: -10px;
+    right: -12px;
+    background: black;
+    opacity: 0;
+
+    border-radius: 50%;
+}
+
+.main_nav>li:first-child:hover .circle {
+    opacity: 0.2;
+}
+
+.main_nav {
+    display: flex;
+    justify-content: start;
+}
+
+.sub_nav {
+    display: flex;
+    justify-content: end;
+}
+
+nav>.nav_clamp_box>ul>li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>.nav_clamp_box ul li>ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+}
+
+/* 서브 메뉴 */
+.parts>ul,
+.supplies>ul,
+.accessory>ul {
+    display: none;
+    opacity: 0;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.9);
+
+    width: 120px;
+    padding: 5px;
+
+    background: rgb(62, 62, 62);
+}
+
+.parts>ul li,
+.supplies>ul li,
+.accessory>ul li {
+    height: 100%;
+    width: 100%;
+    padding: 7px 5px;
+}
+
+.parts>ul li:hover a,
+.supplies>ul li:hover a,
+.accessory>ul li:hover a {
+    height: 100%;
+    width: 100%;
+    color: yellow;
+}
+
+/* 전체 카테고리 */
+
+.all_category {
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+
+    border: 1px solid black;
+    border-top: none;
+    background: rgba(255, 255, 255, 0.9);
+
+    width: 900px;
+    height: 450px;
+
+    position: absolute;
+
+    top: 80px;
+    left: 0;
+
+    color: rgb(62, 62, 62);
+}
+
+
+
+.all_category ul {
+
+    width: 300px;
+    height: 400px;
+    padding: 5px;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+
+    font-size: 15px;
+    font-weight: 100;
+
+
+}
+
+.category_part,
+.category_supplies,
+.category_bottle {
+    position: relative;
+}
+
+
+.all_category ul .fa-supplies_symbol {
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+
+    width: 100px;
+    height: 200px;
+}
+
+.all_category ul .fa-steam-symbol,
+.all_category ul .fa-bottle-water {
+    position: absolute;
+    font-size: 150px;
+
+    right: 50px;
+    bottom: 10px;
+
+    color: black;
+}
+
+.all_category ul li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 7px 10px;
+}
+
+.all_category ul li:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.all_category ul li:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.all_category ul h1 {
+    font-size: 20px;
+    font-weight: bold;
+
+    border-bottom: 1px solid black;
+
+    width: 200px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.all_category ul li a {
+    color: rgb(62, 62, 62);
+}
+
+.route {
+    display: flex;
+    justify-content: end;
+
+    margin: 35px auto;
+
+    width: 1200px;
+}
+
+.route span {
+    opacity: 0.5;
+    font-size: 15px;
+}

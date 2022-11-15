@@ -1,0 +1,282 @@
+.test {
+    height: 500px;
+}
+
+.main_body {
+    font-family: "Noto Sans KR", Verdana, Dotum, AppleGothic, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: start;
+    align-items: center;
+}
+
+.img_page_box {
+    position: relative;
+
+    height: 450px;
+    width: 1200px;
+    overflow: hidden;
+}
+
+.main_body>.img_page_box>.img_index {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 0;
+}
+
+.category_button {
+    position: absolute;
+    z-index: 1;
+
+    right: 50px;
+    top: 45px;
+}
+
+.category_button ul {
+    box-shadow: 0 4px 5px rgb(0 0 0 / 30%);
+    height: 360px;
+    width: 180px;
+
+    background: white;
+}
+
+.category_button ul li {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-bottom: 0.1px solid rgba(0, 0, 0, 0.09);
+    background: white;
+    padding: 25.5px 20px;
+
+    font-size: 14px;
+
+    position: relative;
+    cursor: pointer;
+}
+
+.category_button ul li:hover {
+    border: 2px solid rgb(66, 66, 255);
+}
+
+.category_button ul .img_bike i,
+.category_button ul .img_steam i,
+.category_button ul .img_bottle i {
+    position: absolute;
+    font-size: 50px;
+    right: 23px;
+}
+
+.category_button ul .img_bike i {
+    right: 15px;
+}
+
+.category_button ul .img_bottle i {
+    right: 30px;
+}
+
+.category_button ul .img_frame img {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    right: 23px;
+}
+
+.category_button ul .img_supplies img {
+    position: absolute;
+    height: 50px;
+    width: 25px;
+    right: 30px;
+}
+
+/* 카테고리별 제품 */
+
+
+.product_display {
+    display: flex;
+    flex-direction: column;
+}
+
+.categody_title {
+    font-size: 25px;
+    font-weight: bold;
+
+    margin: 50px 0 20px 0;
+}
+
+.bike_display_box {
+    display: flex;
+    flex-direction: row;
+
+    border: 2px solid rgba(0, 0, 0, 5);
+    border-right: none;
+    border-left: none;
+
+    width: 1200px;
+    height: 600px;
+
+    margin-bottom: 20px;
+}
+
+.bike_title {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    width: 145px;
+    height: 600px;
+}
+
+.bike_img_title {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.bike_img_title>.fa-bicycle {
+    font-size: 70px;
+    margin: 20px 0;
+}
+
+.category_frame_img {
+    width: 50px;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.bike_img_title span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.bike_tag {
+    margin-bottom: 20px;
+}
+
+.bike_tag h4 {
+    margin-bottom: 10px;
+}
+
+.bike_tag ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.bike_tag ul li {
+    margin-bottom: 5px;
+    padding: 5px;
+    padding-left: 0;
+}
+
+.bike_tag ul li a {
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    padding: 5px;
+
+    color: rgb(42, 99, 255);
+}
+
+.bike_tag ul li a:hover {
+    background: rgb(42, 99, 255);
+    color: white;
+}
+
+.bike_img_page {
+    width: 325px;
+    height: 100%;
+    position: relative;
+
+    overflow: hidden;
+}
+
+.bike_img_page ul {
+    display: flex;
+    flex-direction: row;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.bike_index_box {
+    display: flex;
+    flex-direction: column;
+
+    width: 730px;
+    height: 100%;
+}
+
+.bike_index_box .bike_index2 ul li span:last-child,
+.bike_index_box .bike_index ul li span:last-child {
+    vertical-align: -1px;
+    font-size: 14px;
+    font-family: 'Tahoma';
+}
+
+.bike_index_box .bike_index2 ul li:hover span,
+.bike_index_box .bike_index ul li:hover span {
+    color: rgb(42, 99, 255);
+}
+
+.bike_index {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+
+.bike_index,
+.bike_index2 {
+    width: 730px;
+    height: 50%;
+}
+
+.bike_index2 ul,
+.bike_index ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.bike_index2 ul li,
+.bike_index ul li {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 250px;
+    width: 200px;
+
+    padding: 25px;
+    cursor: pointer;
+}
+
+.bike_index2 ul li .img_box,
+.bike_index ul li .img_box {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 165px;
+    height: 165px;
+    overflow: hidden;
+}
+
+.bike_index2 ul li .img_box img,
+.bike_index ul li .img_box img {
+    max-width: auto;
+    height: 100%;
+    display: block;
+}
